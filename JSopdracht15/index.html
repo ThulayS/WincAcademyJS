@@ -8,37 +8,27 @@
 </head>
 
 <body>
+    <div class="container">
 
-    <h2>Dit is mijn dropdown menu</h2>
-    <p>Klik er op om hem te testen.</p>
+        <h2>Dit is mijn dropdown menu</h2>
+        <p>Klik er op om hem te testen.</p>
 
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="#home">Home</a>
-            <a href="#about">Over mij</a>
-            <a href="#contact">Contact</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#" id="yellow">Yellow</a>
+                <a href="#" id="green">Green</a>
+                <a href="#" id="purple">Purple</a>
+                <a href="#" id="blue"> Blue</a>
+                <a href="#" id="black"> Black</a>
+            </div>
         </div>
+
     </div>
 
-    <script>
 
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
+
+    <script src="script.js"></script>
 
 </body>
 

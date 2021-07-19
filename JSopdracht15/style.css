@@ -1,11 +1,25 @@
+body{
+    background-color:#41B3A3;
+    color:#FFFFFF;
+    font: normal 16px Arial, Helvetica, sans-serif; 
+
+    line-height: 1.6em;
+    margin:0;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+}
 
 .dropbtn {
     background-color: #55db34;
     color: white;
-    padding: 16px;
+    padding: 40px;
     font-size: 16px;
     border: 3px dotted;
     cursor: pointer;
+    height: 50px;
 }
 
 .dropbtn:hover,
